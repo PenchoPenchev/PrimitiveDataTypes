@@ -1,0 +1,24 @@
+namespace FloatNDouble
+{
+    using System;
+
+    class FloatNDouble
+    {
+        static void Main(string[] args)
+        {
+            /*Which of the following values can be assigned to a variable of type float and which to a variable of type                 double:34.567839023, 12.345, 8923.1234857, 3456.091?*/
+
+            float flt1 = 12.345f;
+            float flt2 = 3456.091f;
+
+            Console.WriteLine("Float numbers {0}, {1}", flt1, flt2);
+
+            double dbl1 = 12.345;
+            double dbl2 = 3456.091;
+            double dbl3 = 8923.1234857;
+            double dbl4 = 34.567839023;
+
+            Console.WriteLine("Double numbers {0}, {1}, {2}, {3}", dbl1, dbl2, dbl3, dbl4);
+        }
+    }
+}
