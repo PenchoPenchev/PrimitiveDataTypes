@@ -1,0 +1,24 @@
+namespace ShowCharacterUnicode
+{
+    using System;
+
+    class ShowCharacterUnicode
+    {
+        static void Main(string[] args)
+        {
+            /*Declare a character variable and assign it with the symbol that has Unicode code 72. Hint: first use the Windows                      Calculator to find the hexadecimal representation of 72.*/
+            //Dynamic way
+            Console.WriteLine("Dynamic");
+            Console.Write("Write a unicode value = ");
+            int unicode = Int32.Parse(Console.ReadLine());
+
+            string symbolFromUnicode = Char.ConvertFromUtf32(unicode);
+            Console.WriteLine("Unicode value {0} is character '{1}'", unicode, symbolFromUnicode);
+
+            Console.WriteLine("Static");
+            string hex = String.Format("{0:X}", unicode);
+            char chr = '\u0048';
+            Console.WriteLine("Unicode value 72 is character '{0}'",chr);
+        }
+    }
+}
