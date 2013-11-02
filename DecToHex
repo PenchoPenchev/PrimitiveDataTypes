@@ -1,0 +1,15 @@
+namespace DecToHex
+{
+    using System;
+
+    class DecToHex
+    {
+        static void Main(string[] args)
+        {
+            /*Declare an integer variable and assign it with the value 254 in hexadecimal format. Use Windows Calculator to find its                    hexadecimal representation */
+
+            int int1 = 254;
+            Console.WriteLine("Integer number {0} is {0:X} in Hexadecimal", int1);
+        }
+    }
+}
