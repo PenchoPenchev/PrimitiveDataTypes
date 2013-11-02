@@ -1,0 +1,18 @@
+namespace MaleOrFemale
+{
+    using System;
+
+    class MaleOrFemale
+    {
+        static void Main(string[] args)
+        {
+            /*Declare a boolean variable called isFemale and assign an appropriate value corresponding to your gender.*/
+            Console.Write("What is your gender male or female: ");
+            string gender = Console.ReadLine();
+
+            bool isFemale = gender.ToLower().Equals("female") ? true : false;
+
+            Console.WriteLine(isFemale ? "You are a female" : "You are a male");
+        }
+    }
+}
