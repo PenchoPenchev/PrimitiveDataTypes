@@ -1,0 +1,40 @@
+namespace IsoscelesTriangleOfCopyRightSymb
+{
+    using System;
+    using System.Text;
+
+    class IsoscelesTriangleOfCopyRightSymb
+    {
+        static void Main(string[] args)
+        {
+            /*Write a program that prints an isosceles triangle of 9 copyright symbols ©. Use Windows Character Map to find the Unicode               code of the © symbol. Note: the © symbol may be displayed incorrectly.
+              Unicode of © symbol is "\u00A9" - 169
+             */
+            
+            Console.Write("Type a side length: ");
+            int length = Int16.Parse(Console.ReadLine());
+
+            char copyright = '\u00A9';
+            
+            int bottom = 0;
+
+            Console.WriteLine(copyright.ToString().PadLeft(20));
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write(copyright.ToString().PadLeft(19 - i));
+                Console.Write(copyright.ToString().PadLeft(2 + 2*i));
+                Console.WriteLine();
+                bottom = 19 - i;
+                if (i + 1 == length)
+                {
+                    Console.Write(copyright.ToString().PadLeft(bottom-1));
+                    for (int j = 0; j < length + 1; j++)
+                    {
+                        Console.Write(copyright.ToString().PadLeft(2));
+                    }
+                }
+            }
+
+        }
+    }
+}
