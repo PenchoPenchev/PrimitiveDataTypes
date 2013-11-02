@@ -1,0 +1,21 @@
+namespace HWPrimitiveDataTypes
+{
+    using System;
+
+    class MostAppropriateVariables
+    {
+        static void Main(string[] args)
+        {
+            /* Declare five variables choosing for each of them the most appropriate of the types byte, sbyte, short, 						ushort, int, uint, long, ulong to represent the following values: 52130, -115, 4825932, 97, -10000 */
+
+            byte byt = 97;
+            sbyte sbyt = -115;
+            short shrt = -10000;
+            ushort ushrt = 52130;
+            uint unt = 4825932;
+
+            Console.WriteLine("Most appropriate variables byte={0}, sbyte={1}, short={2}, ushort={3}",byt, sbyt, shrt, 										ushrt);
+            Console.WriteLine("Most appropriate variables uint={0}", unt);
+        }
+    }
+}
