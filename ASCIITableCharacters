@@ -1,0 +1,16 @@
+namespace ASCIITableCharacters
+{
+    using System;
+
+    class ASCIITableCharacters
+    {
+        static void Main(string[] args)
+        {
+            /*Find online more information about ASCII (American Standard Code for Information Interchange) and write a program that                    prints the entire ASCII table of characters on the console.*/
+            for (int i = 0; i < 128; i++)
+            {
+                Console.WriteLine("ASCII decimal code {0} is char {1}", i, (char)i);
+            }
+        }
+    }
+}
