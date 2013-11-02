@@ -1,0 +1,26 @@
+namespace ExchangeIntValues
+{
+    using System;
+
+    class ExchangeIntValues
+    {
+        static void Main(string[] args)
+        {
+            /*Declare  two integer variables and assign them with 5 and 10 and after that exchange their values.*/
+
+            Console.Write("a = ");
+            int a = Int16.Parse(Console.ReadLine());
+
+            Console.Write("b = ");
+            int b = Int16.Parse(Console.ReadLine());
+
+            int temp;
+
+            temp = a;
+            a = b;
+            b = temp;
+
+            Console.WriteLine("a = {0}, b = {1}", a, b);
+        }
+    }
+}
