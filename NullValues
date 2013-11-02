@@ -1,0 +1,28 @@
+namespace NullValues
+{
+    using System;
+
+    class NullValues
+    {
+        static void Main(string[] args)
+        {
+            /*Create a program that assigns null values to an integer and to double variables. Try to print them on the console, try to               add some values or the null literal to them and see the result.*/
+
+            int? nullInt = null;
+
+            double? nullDouble = null;
+
+            Console.WriteLine(nullInt);
+            Console.WriteLine(nullDouble);
+
+            Console.WriteLine("nullInt value ", nullInt + 1);
+            Console.WriteLine("nullDouble value ", nullDouble + 1.0);
+
+            nullInt = 5;
+            nullDouble = 5.0;
+
+            Console.WriteLine("nullInt value ", nullInt);
+            Console.WriteLine("nullDouble value ", nullDouble);
+        }
+    }
+}
