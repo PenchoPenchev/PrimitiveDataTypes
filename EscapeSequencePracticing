@@ -1,0 +1,21 @@
+namespace EscapeSequencePracticing
+{
+    using System;
+
+    class EscapeSequencePracticing
+    {
+        static void Main(string[] args)
+        {
+            /*Declare two string variables and assign them with following value:
+            The "use" of quotations causes difficulties.
+	        Do the above in two different ways: with and without using quoted strings.*/
+
+            string quoted = "The \"use\" of quotations causes difficulties.";
+
+            string ordinary = "The use of quotations causes difficulties.";
+
+            Console.WriteLine(ordinary);
+            Console.WriteLine(quoted);
+        }
+    }
+}
