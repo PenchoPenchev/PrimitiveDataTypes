@@ -1,0 +1,27 @@
+namespace SafelyComparesFloatNumbers
+{
+    using System;
+
+    class SafelyComparesFloatNumbers
+    {
+        static void Main(string[] args)
+        {
+            /*Write a program that safely compares floating-point numbers with precision of 0.000001. Examples:(5.3 ; 6.01)  false;                   5.00000001 ; 5.00000003)  true*/
+
+            Console.Write("Type a float-point number: ");
+            double number1 = Double.Parse(Console.ReadLine());
+
+            Console.Write("Type a second float-point number: ");
+            double number2 = Double.Parse(Console.ReadLine());
+
+            if (Math.Round(number1, 6) != Math.Round(number2, 6))
+            {
+                Console.WriteLine(Math.Round(number1, 6) > Math.Round(number2, 6) ? "{0} > {1}" : "{0} < {1}", number1, number2);
+            }
+            else
+            {
+                Console.WriteLine("{0} = {1}", number1, number2);
+            }
+        }
+    }
+}
